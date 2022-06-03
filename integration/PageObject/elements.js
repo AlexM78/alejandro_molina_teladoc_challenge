@@ -26,10 +26,6 @@ getModal() {
     return cy.get('input[name="Password"]')
  } 
 
- getPassword() {
-    return cy.get('input[name="Password"]')
- } 
-
  getCustomer()  {
     return cy.get('input[name="optionsRadios"]')
  } 
@@ -46,10 +42,6 @@ getModal() {
     return cy.get('input[name="Mobilephone"]')
  } 
 
- getCellPhone()  {
-    return cy.get('input[name="Mobilephone"]')
- } 
-
  getSaveButton()  {
     return cy.get('button.btn.btn-success')
  } 
@@ -59,7 +51,7 @@ getModal() {
  } 
 
  getDeleteEntry()  {
-    return cy.get(':nth-child(3) > :nth-child(11) > .btn')
+    return cy.contains('td','novak').siblings().last()
  } 
 
  getConfirmDelete()  {
